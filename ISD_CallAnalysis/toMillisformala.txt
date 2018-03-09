@@ -1,0 +1,14 @@
+	        private long toMillis(String date) {
+	        	 
+	            SimpleDateFormat format = new SimpleDateFormat(
+	                    "yyyy-MM-dd HH:mm:ss");
+	            Date dateFrm = null;
+	            try {
+	                dateFrm = format.parse(date);
+
+	            } catch (ParseException e) {
+	 
+	                e.printStackTrace();
+	           }
+	            return dateFrm.getTime();
+	        }
